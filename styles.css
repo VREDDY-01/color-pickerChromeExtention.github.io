@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.popup{
+    width: 350px;
+}
+
+.popup :where(.picker , header , .color ,.all-colors){
+    display: flex;
+    align-items: center;
+}
+
+.popup .picker{
+    padding: 30px 0;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+
+.picker #color-picker{
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #53d8f0;
+    color: white;
+}
+
+.picked-colors{
+    margin: 10px 15px;
+}
+
+.picked-colors.hide{
+    display: none;
+}
+
+.picked-colors header{
+    justify-content: space-between;
+}
+
+.picked-colors .clear-all{
+    color: #6853f0;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.all-colors{
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.all-colors .color{
+    cursor: pointer;
+    width: calc(100%/3);
+    margin-bottom: 10px;
+}
+
+.all-colors .color .rect{
+    display: block;
+    height: 22px;
+    margin-right: 8px;
+    width: 22px;
+    background-color: #6853f0;
+    border-radius: 5px;
+}
+
+.all-colors .color .value{
+    font-size: 0.96rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #53ebf0;
+}
